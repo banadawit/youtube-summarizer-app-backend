@@ -1,0 +1,1 @@
+web: gunicorn --bind 0.0.0.0:$PORT summarizer_project.wsgi
