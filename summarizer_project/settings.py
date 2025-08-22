@@ -23,6 +23,8 @@ SECRET_KEY = env('SECRET_KEY', default='django-insecure-=-o)(7ye#350h8h1ob4x)hy8
 DEBUG = env.bool("DEBUG", default=False)
 OPENAI_API_KEY = env("OPENAI_API_KEY")
 
+print("OPENAI_API_KEY read from environment:", os.environ.get("OPENAI_API_KEY"))
+
 # Use this to dynamically set ALLOWED_HOSTS based on environment.
 # Railway provides this via the .railway file or directly in the dashboard.
 # In development, you can set ALLOWED_HOSTS=['*'] in your .env file.
